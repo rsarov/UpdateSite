@@ -1,9 +1,11 @@
 ---
 const program = {
   name: "Updates",
-  description: "Updates for project.",
+  description: "Updates of project.",
   downloadUrlUpdate: "/files/Update.txt",
   downloadUrlUpdateA: "/files/UpdateA.txt",
+  downloadUrlBookApk: "https://github.com/rsarov/BookSite/releases/download/v1.0.0/Book.apk",
+  downloadUrlProxyVApk: "https://github.com/rsarov/ProxyVSite/releases/download/v1.0.0/ProxyV.apk",
   downloadUrlRelease: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/Release.gzip"
 };
 ---
@@ -32,6 +34,8 @@ const program = {
       <p>{program.description}</p>
       <a href={program.downloadUrlUpdate} download>Update.txt</a><br>
       <a href={program.downloadUrlUpdateA} download>UpdateA.txt</a><br>
+      <a href={program.downloadUrlBookApk} download>Book.apk</a><br>
+      <a href={program.downloadUrlProxyVApk} download>ProxyV.apk</a><br>
 	    <a href={program.downloadUrlRelease} download>Release.gzip</a>
     </div>
   </body>
