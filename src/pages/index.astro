@@ -1,16 +1,36 @@
 ---
-
+const program = {
+  name: "Updates",
+  description: "Updates for project.",
+  downloadUrlUpdate: "/files/Update.txt",
+  downloadUrlRelease: "/files/Release.gzip"
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{program.name}</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 2rem; background: #f5f5f5; }
+      .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+      h1 { color: #333; }
+      p { line-height: 1.6; }
+      a.button {
+        display: inline-block; padding: 0.75rem 1.5rem; margin-top: 1rem;
+        background-color: #1e90ff; color: #fff; text-decoration: none; border-radius: 4px;
+        transition: background-color 0.2s;
+      }
+      a.button:hover { background-color: #0c71d0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{program.name}</h1>
+      <p>{program.description}</p>
+      <a href={program.downloadUrlUpdate} download>Update.txt</a><br>
+	    <a href={program.downloadUrlRelease} download>Release.gzip</a>
+    </div>
+  </body>
 </html>
