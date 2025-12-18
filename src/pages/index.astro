@@ -3,6 +3,7 @@ const program = {
   name: "Updates",
   description: "Updates for project.",
   downloadUrlUpdate: "/files/Update.txt",
+  downloadUrlUpdateA: "/files/UpdateA.txt",
   downloadUrlRelease: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/Release.gzip"
 };
 ---
@@ -30,6 +31,7 @@ const program = {
       <h1>{program.name}</h1>
       <p>{program.description}</p>
       <a href={program.downloadUrlUpdate} download>Update.txt</a><br>
+      <a href={program.downloadUrlUpdateA} download>UpdateA.txt</a><br>
 	    <a href={program.downloadUrlRelease} download>Release.gzip</a>
     </div>
   </body>
