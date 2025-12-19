@@ -4,7 +4,11 @@ const program = {
   description: "Updates of project.",
   downloadUrlUpdate: "/files/Update.txt",
   downloadUrlUpdateA: "/files/UpdateA.txt",
+  downloadUrlUpdatePV: "/files/UpdatePV.txt",
   downloadUrlTorrentArchives: "/files/Библиотека Либрусек (lib.rus.ec) + Libruks(17 декабря 2025 г.) - книг в архивах 455.377 [rutracker-5384939]_AddedTrackers.torrent",
+  downloadUrlTorrentLibruks: "/files/Libruks - library russian books (библиотека русских книг) 1.0.8.5 x86 x64 [2025, RUS] Уведомления об обновлениях работают только в [rutracker-5377958]_AddedTrackers.torrent",
+  downloadUrlLib2inpx: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/lib2inpx.zip",
+  downloadUrlAddAnnounceTrackers: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/AddAnnounceTrackers.zip",
   downloadUrlBookApk: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/Book.apk",
   downloadUrlProxyVApk: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/ProxyV.apk",
   downloadUrlRelease: "https://github.com/rsarov/UpdateSite/releases/download/v1.0.0/Release.gzip"
@@ -35,7 +39,11 @@ const program = {
       <p>{program.description}</p>
       <a href={program.downloadUrlUpdate} download>Update.txt</a><br>
       <a href={program.downloadUrlUpdateA} download>UpdateA.txt</a><br>
+      <a href={program.downloadUrlUpdatePV} download>UpdatePV.txt</a><br>
       <a href={program.downloadUrlTorrentArchives} download>TorrentArchives</a><br>
+      <a href={program.downloadUrlTorrentLibruks} download>TorrentLibruks</a><br>
+      <a href={program.downloadUrlLib2inpx} download>lib2inpx.zip</a><br>
+      <a href={program.downloadUrlAddAnnounceTrackers} download>AddAnnounceTrackers.zip</a><br>
       <a href={program.downloadUrlBookApk} download>Book.apk</a><br>
       <a href={program.downloadUrlProxyVApk} download>ProxyV.apk</a><br>
 	    <a href={program.downloadUrlRelease} download>Release.gzip</a>
